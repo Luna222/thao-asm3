@@ -4,7 +4,6 @@ My site is live at  https://luna222.github.io/thao-asm3/digital-cv.html
 
 ```
 Project Structure:
-```
 
 WEB101x2.1-Assignment3-thaonmfx20105
 ├─ css
@@ -55,7 +54,5 @@ WEB101x2.1-Assignment3-thaonmfx20105
 └─ digital-cv.html
 ├─ icon-list.html
 ├─ project-charter.html
-
-```
 
 ```

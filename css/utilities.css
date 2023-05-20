@@ -1,0 +1,144 @@
+/* ------------------------ */
+/* UTILITIES
+/* ------------------------ */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+
+/* Flex - Grid layout */
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  align-items: start;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+/* Margin & Paddings, override bootstrap spacing utilities:
+y — vertical 
+x - horizontal
+m - margin
+p - padding
+*/
+.my-sm {
+  margin: 0.625rem 0 !important;
+}
+
+.my-1 {
+  margin: 1rem 0 !important;
+}
+
+.my-2 {
+  margin: 1.5rem 0 !important;
+}
+
+.my-3 {
+  margin: 2rem 0 !important;
+}
+
+.my-4 {
+  margin: 3rem 0 !important;
+}
+
+.my-5 {
+  margin: 4rem 0 !important;
+}
+
+.m-1 {
+  margin: 1rem !important;
+}
+
+.m-2 {
+  margin: 1.5rem !important;
+}
+
+.m-3 {
+  margin: 2rem !important;
+}
+
+.m-4 {
+  margin: 3rem !important;
+}
+
+.m-5 {
+  margin: 4rem !important;
+}
+
+/* Padding */
+.py-sm {
+  padding: 0.625rem 0 !important;
+}
+
+.py-1 {
+  padding: 1rem 0 !important;
+}
+
+.py-2 {
+  padding: 1.5rem 0 !important;
+}
+
+.py-3 {
+  padding: 2rem 0 !important;
+}
+
+.py-4 {
+  padding: 3rem 0 !important;
+}
+
+.py-5 {
+  padding: 4rem 0 !important;
+}
+
+.p-sm {
+  padding: 0.625rem !important;
+}
+
+.p-1 {
+  padding: 1rem !important;
+}
+
+.p-2 {
+  padding: 1.5rem !important;
+}
+
+.p-3 {
+  padding: 2rem !important;
+}
+
+.p-4 {
+  padding: 3rem !important;
+}
+
+.p-5 {
+  padding: 4rem !important;
+}
+
+.col-sm-6,
+.col-md-4,
+.col-sm-4 {
+  flex: 0 1 auto;
+}
+
+/* Typography */
+.txt-shadow {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* === END === */

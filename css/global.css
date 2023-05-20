@@ -1,0 +1,188 @@
+/* ------------------------ */
+/* GLOBAL SETTINGS
+/* ------------------------ */
+:root {
+  --color-primary: #5c7cfa;
+  --color-dark-primary: #4c6ef5;
+  --color-primary-gray: rgba(68, 68, 68, 0.8);
+  --color-pastel-gray: rgba(68, 68, 68, 0.6);
+  --color-light-gray: #f1f3f5;
+  --color-white: #f3f3f3;
+  --color-darkblue-alpha: rgba(33, 47, 103, 0.8);
+  --color-darkblue: rgba(33, 47, 103);
+}
+
+html {
+  scroll-padding-top: 100px;
+  scroll-behavior: smooth;
+}
+
+/* Global Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Test a few media query to set some font sizes at different screen sizes.
+ * Using the em unit for breakpoints (which is relative to the parent's ele font size
+ * The calculation is the following
+ * screen size divided by browser base font size
+ * As an example: a breakpoint at 768px
+ * 768px / 16px = 48em
+*/
+
+/* 1200px / 16px = 75em */
+@media (max-width: 75em) {
+  html {
+    font-size: 98%;
+  }
+}
+
+/* Tablets and under
+768px / 16px = 48em */
+@media (max-width: 48em) {
+  html {
+    font-size: 96%;
+  }
+}
+
+/* Mobile
+576px / 16px = 36em */
+@media (max-width: 36em) {
+  html {
+    font-size: 94%;
+  }
+}
+
+/* ------------------------ */
+/* GENERAL STYLES
+/* ------------------------ */
+body {
+  font-family: "Rubik", sans-serif;
+  color: rgba(68, 68, 68, 0.8);
+  line-height: 1; /* reset */
+}
+
+.page-wrapper {
+  width: 100%;
+}
+
+h2.section-title {
+  /* font-size: 30px; */
+  font-size: 1.875rem;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+/* Override some built-in bootstrap elements*/
+p {
+  padding: 0;
+  margin: 0;
+}
+
+ol,
+ul {
+  padding: 0;
+  margin: 0;
+}
+/**/
+
+.container {
+  overflow: auto;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+section > .container {
+  width: 1255px;
+  max-width: 100%;
+  padding: 30px 40px;
+  margin: 0 auto;
+
+  display: block;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.icon {
+  color: #5c7cfa;
+}
+
+.bg-grey {
+  background-color: #f1f3f5;
+}
+
+.btn--mid {
+  font-size: 14px;
+  padding: 8px 24px;
+}
+
+/* Animations */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%); /* off screen to the left */
+  }
+
+  100% {
+    transform: translateX(0); /* return to the normal position*/
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%); /* off screen to the right */
+  }
+
+  100% {
+    transform: translateX(0); /* return to the normal position*/
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%); /*up above the top off screen*/
+  }
+
+  100% {
+    transform: translateX(0); /* return to the normal position*/
+  }
+}
+
+@keyframes slideInFromBottom {
+  /* off screen to the bottom */
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateX(0); /* return to the normal position*/
+  }
+}
+
+/* Tablets and under */
+@media screen and (max-width: 768px) {
+  section > .container {
+    padding: 15px 20px;
+  }
+
+  .container {
+    padding: 0 25px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 576px) {
+}
+
+/* === END === */

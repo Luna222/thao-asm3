@@ -12,6 +12,7 @@
 @media screen and (max-width: 768px) {
   #banner {
     height: 60vh;
+    background-position: center center;
   }
 
   .banner-text {
@@ -188,8 +189,15 @@
   .goals .flex > *:nth-child(2),
   .team .flex > *:nth-child(2),
   .primary .flex > *:nth-child(2) {
-    align-self: flex-start;
     margin-top: 0.5rem;
+  }
+
+  .goals .flex > *:nth-child(2),
+  .team .flex > *:nth-child(2),
+  .primary .flex > *:nth-child(2),
+  .ct-timeline .flex > *:nth-child(2) {
+    width: 100%;
+    align-self: flex-start;
   }
 
   .flag-icon,
